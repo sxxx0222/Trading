@@ -1,0 +1,200 @@
+body {
+    padding: 0;
+}
+
+.main-container {
+    max-height: 1260px;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    height: 100%;
+}
+
+.top-header {
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #E5E5E5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.games-katalog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.group-katalog {
+    border: 0;
+    background-color: #FFFFFF;
+    width: 70px;
+    padding-top: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.gactive{
+    color: black;
+    font-weight: bold;
+    border-left-color: red;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-right-color: red;
+    border-right-width: 3px;
+    border-right-style: solid;
+
+}
+
+
+.group-katalog p {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.credits {
+    padding-left: 140px;
+    display: flex;
+    text-align: right;
+}
+
+.credits p {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.credits img {
+    margin-left: 15px;
+}
+
+.settings {
+    padding-top: 10px;
+}
+
+.list{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+.all-games {
+    display: flex;
+    margin-left: 40px;
+}
+
+.all-games a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #E5E5E5;
+    cursor: pointer;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.active{
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: bold;
+    border-top-color: red;
+    border-top-width: 3px;
+    border-top-style: solid;
+
+}
+
+.btn img {
+    padding-top: 8px;
+}
+
+.btn p {
+    float: right;
+    padding-left: 15px;
+}
+
+.promotions {
+    margin-left: auto;
+}
+
+.deposit {
+    color: #F48215;
+    margin-top: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.deposit-button {
+    width: 129px;
+    height: 31px;
+    background-color: #F48215;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.search {
+    background-color: #E5E5E5;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.top-body {
+    background-color: #F6F6F6;
+    height: 55px;
+    padding-top: 10px;
+}
+
+.top-body img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bottom-body {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-body p {
+    text-align: center;
+}
+
+.bottom-body table,
+td {
+    background-color: #F6F6F6;
+    border: 5px solid #F6F6F6;
+}
+
+.bottom-body td {
+    padding: 15px;
+    background-color: #FFFFFF
+}

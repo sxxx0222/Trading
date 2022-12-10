@@ -1,0 +1,403 @@
+@media only screen and (max-width: 1680px) {
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:nth-child(2) p:first-child, 
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:last-child p:first-child {min-height: 32px;}
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:nth-child(2) {width: 6.667%;}
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:nth-child(3) {padding-left: 5px; margin-left: 0;}
+}
+
+@media only screen and (max-width: 1440px) {
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:nth-child(2) p:first-child, 
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:last-child p:first-child {min-height: 48px;}
+}
+
+@media only screen and (max-width: 1300px) {
+    .table-orders .order-table {overflow-x: scroll; overflow-y: hidden;}
+    .table-orders .order-table .order-table-content {overflow-y: scroll; overflow-x: hidden;}
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li,
+    .gms-nav .games-titles .wrap li{padding: 5px 5px!important;}
+
+    .ord-items {padding-right: 17px}
+    .more-info-cont .more-info-drop {top: calc(100% + 6px);}
+    
+    .table-orders .order-table ul li:nth-child(4),
+    .table-orders .order-table ul li:nth-child(5),
+    .table-orders .order-table ul li:nth-child(6),
+    .table-orders .order-table ul.col-name li:nth-child(4),
+    .table-orders .order-table ul.col-name li:nth-child(5),
+    .table-orders .order-table ul.col-name li:nth-child(6),
+    .table-orders .order-table ul li:nth-child(9), .table-orders .order-table ul li:nth-child(10) {min-width: 72px;}
+
+    .more-info-cont .more-info-drop {left: -5px!important;}
+
+    .order-ticket .inner-cont .bottom-cont .inner .pos-order-options .closing-conditions .bottom-cont .eur-inputs .row li:first-child, .order-ticket .inner-cont .bottom-cont .inner .pos-order-options .closing-conditions .bottom-cont .odds-inputs .row li:first-child {min-width: 225px;}
+    .order-ticket .inner-cont .bottom-cont .inner .pos-order-options .closing-conditions .bottom-cont .eur-inputs .row li p:first-child, .order-ticket .inner-cont .bottom-cont .inner .pos-order-options .closing-conditions .bottom-cont .odds-inputs .row li p:first-child {min-width: 76px;}
+
+
+    /*#positional-orders .order-table-content {width: 1265px!important;}*/
+
+    /*OTHER PAGES*/
+    /*PL REPORT*/
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:nth-child(2) p:first-child,
+    .tplat-pl-page .pl-rep-content .pl-rep-table .table-summary li:last-child p:first-child,
+    .tplat-bet-list-page.posi-bet-list .bet-table .bet-table-wrap .bet-summary ul li:nth-child(2) p:first-child,
+    .tplat-bet-list-page.posi-bet-list .bet-table .bet-table-wrap .bet-summary ul li:last-child p:first-child {min-height: 48px;}
+    /*NORM BET LIST*/
+    .other-pages.posi-bet-list .content-info {padding: 16px 8px 8px 8px!important; display: block;}
+    .tplat-bet-list-page .content-info .status {width: 100%; margin-top: 10px; margin-bottom: 14px; padding-left: 0!important;}
+    .tplat-bet-list-page .content-info .status>p {margin: 0 auto;}
+    .tplat-bet-list-page .middle-wrap .filter-row .filter-btns {width: 100%; justify-content: flex-end; margin-left: 0!important; margin-top: 18px;}
+    .tplat-bet-list-page .middle-wrap .right-pagination {margin-top: 18px!important;}
+    .tplat-bet-list-page .middle-wrap .filter-row .filter-btns .reset-btn,
+    .tplat-bet-list-page .middle-wrap .filter-row .filter-btns .download-btn {margin-left: 12px;}
+    .tplat-bet-list-page .middle-wrap .filter-row .filter {margin-left: 0!important; width: 50%;}
+    .tplat-bet-list-page .middle-wrap .filter-row .filter>p {width: 72px;}
+    .tplat-bet-list-page .middle-wrap .filter-row .date-filter {width: 50%; margin-top: 10px;}
+    .tplat-bet-list-page .middle-wrap .filter-row .date-filter>p{padding-left: 0; width: 72px; }
+
+    .tplat-bet-list-page:not(.posi-bet-list) .middle-wrap .filter-row .date-filter input[type=text] {width: 260px!important;}
+    /*POSI BET LIST*/
+    /* .other-pages.posi-bet-list .content-info {display: block!important;} */
+    .tplat-bet-list-page.posi-bet-list .content-info .left {justify-content: center!important;}
+    .posi-bet-list .middle-wrap .filter-row .filter {width: 33.333%;}
+    .posi-bet-list .middle-wrap .filter-row .date-filter {width: 33.333%;}
+    .posi-bet-list .middle-wrap .filter-row .date-filter:nth-child(5) {margin-left: 0!important;}
+    .tplat-bet-list-page.posi-bet-list .middle-wrap .filter-row .date-filter input[type=text] {width: 180px!important;}
+    /*TRANSACTION SETTLEMENT*/
+    .tplat-tr-page.tr-settlement .filter-row .filter-btns {width: 100%; margin-left: 0!important; display:  flex; justify-content: flex-end;}
+    .tplat-tr-page.tr-settlement .filter-row .filter-btns .filter-btn {margin-right: 10px;}
+    .tplat-tr-page.tr-settlement .filter-row .filter {width: 50%; margin-left: 0; margin-bottom: 10px;}
+    .tplat-tr-page.tr-settlement .filter-row .filter>p {width: 72px;}
+    .tplat-tr-page.tr-settlement .filter-row .date-filter {width: 50%; margin-bottom: 10px;}
+    .tplat-tr-page.tr-settlement .filter-row .date-filter input[type=text] {width: 260px;}
+    .tplat-tr-page.tr-settlement .filter-row .date-filter>p {width: 72px; padding-left: 0;}
+
+    
+}
+
+
+/*FOR IPAD SIZES*/
+@media only screen and (max-width: 1200px) {
+
+    .table-games .container .tgames-row .stats .item-stats li {min-height: 43px;}
+
+    /* .table-orders #draggable{display: none!important} 
+    .table-orders.min {height: 42px!important}
+    .table-orders {height: 42px!important; min-height: 42px!important}*/
+
+    .gms-nav .games-titles .wrap li:first-child,
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li:first-child{width: 48%!important}
+
+
+    
+    .table-orders .order-table ul li:nth-child(4),
+    .table-orders .order-table ul li:nth-child(5),
+    .table-orders .order-table ul li:nth-child(6),
+    .table-orders .order-table ul.col-name li:nth-child(4),
+    .table-orders .order-table ul.col-name li:nth-child(5),
+    .table-orders .order-table ul.col-name li:nth-child(6),
+    .table-orders .order-table ul li:nth-child(9), .table-orders .order-table ul li:nth-child(10) {min-width: 72px;}
+
+    .table-orders .order-table ul li:last-child {min-width: 44px;}
+
+    .eur-inputs .row li p:first-child, 
+    .odds-inputs .row li p:first-child {min-width: 72px!important;}
+    .eur-inputs .row li:first-child,
+    .odds-inputs .row li:first-child {min-width: 230px!important}
+    .eur-inputs .row:first-child li:last-child, .odds-inputs .row:first-child li:last-child {max-width: 120px!important;}
+    .eur-inputs .row li:nth-child(2), .odds-inputs .row li:nth-child(2) {margin: 0 8px!important;}
+
+    .table-orders .top-bar .right .filter {width: 450px;}
+
+    /*IPAD FIXES*/
+    #trading-platform.dark .right-util-nav ul .mcount-ddown ul {bottom: -101px!important;}
+
+    /*.table-orders .order-table ul.col-name {padding-right: 0!important;}*/
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-summary ul li:first-child {width: 61.25%!important;}
+    .tplat-bet-list-page.posi-bet-list .bet-table .bet-table-wrap .bet-summary ul li:first-child {width: 75.75%!important;}
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-summary ul li:nth-child(2) {width: 19%!important;}
+    .tplat-bet-list-page:not(.posi-bet-list) .bet-table .bet-table-wrap .bet-summary ul li:last-child {width: 19%!important;}
+    .tplat-bet-list-page.posi-bet-list .bet-table .bet-table-wrap .bet-summary ul li:nth-child(2) {width: 7%!important;}
+    .tplat-bet-list-page.posi-bet-list .bet-table .bet-table-wrap .bet-summary ul li:last-child p:first-child,
+    .tplat-bet-list-page.posi-bet-list .bet-table .bet-table-wrap .bet-summary ul li:nth-child(2) p:first-child {min-height: 42px;}
+}
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 999px) {
+    /*DOCK SIZES*/
+    /* .table-games.full {height:calc(100% - 253px)!important} */
+
+    header .container {flex-wrap: nowrap;}
+    header .container .right {display: block!important;}
+    header .container .right .right-util-nav,
+    header .container .right .top-stats{float: right;}
+    header .container .right .top-stats #minimize-stats.makeRel {min-width: 480px;}
+    header .container .right .right-util-nav ul.top-navs .country-ddown ul {bottom: -188px!important;}
+    
+    header .container .right .top-stats{width: 100%;}
+
+    .gms-nav .top .scrolling-text {width: 320px;}
+    /*.gms-nav .bot .right {width: 100%}*/
+    .gms-nav .bot .right div.search {width: 250px!important;}
+    .gms-nav .bot .right .mrkt-drop-cont h3 {width: 96px!important;}
+    .gms-nav .bot .right .mrkt-drop-cont h3:after {left: 80px!important;}
+    .gms-nav .bot .right .mrkt-drop-cont ul.mrkt-drop {width: 100px!important}
+
+    .table-games .container .tgames-row.gms-items li p {font-size: 10px;}
+    .table-games .container .tgames-row li.btns-time .btns{flex-wrap: wrap; min-width: 52px; justify-content: space-evenly;}
+    .table-games .container .tgames-row .stats .item-stats li.btns-time .btns {min-width: 52px;}
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li,
+    .table-games .container .tgames-row .stats .item-stats li,
+    .gms-nav .games-titles .wrap li {min-width: 52px;}
+
+    .table-games .container .tgames-row li.btns-time .btns button:first-child{order: 0;}
+    .table-games .container .tgames-row li.btns-time .btns button:nth-child(2){order: 2;}
+    .table-games .container .tgames-row li.btns-time .btns button:nth-child(3){order: 3;}
+    .table-games .container .tgames-row li.btns-time .btns button:nth-child(4){order: 1;}
+
+    .table-orders .order-table ul.ord-items li:last-child{justify-content: center;}
+
+    .table-games#soccer-games .live-content .ord-ticket-click-wrapper li:first-child {min-width: 86px!important;}
+    .gms-nav .live-titles .soccer-titles .wrap li:first-child {min-width: 86px!important;}
+    .table-games#soccer-games .live-content .tgames-row .ord-ticket-click-wrapper li,
+     .table-games#soccer-games .live-content .tgames-row .stats .item-stats li,
+      .gms-nav .live-titles .soccer-titles .wrap li {min-width: 46px!important;}
+
+      .table-orders .order-table#positional-orders ul.ord-items li p {min-height: 72px;}
+
+      /*#all-orders .order-table-content, #normal-orders .order-table-content {width: 926px!important;}*/
+      
+      .table-orders .top-bar .right .filter {width: 200px;}
+      
+    /*OTHER PAGES*/
+    /*UPLOAD PAGE*/
+    /* .tplat-upload-page .container .file-inputs {display: block;}
+    .tplat-upload-page .container .file-inputs li {width: 100%;} */
+    .tplat-upload-page .container .bottom-info .info-wrap{display: block; width: 50%;}
+    .tplat-upload-page .container .bottom-info {display: flex; align-items: stretch;}
+    .tplat-upload-page .container .bottom-info .info-wrap .left,
+    .tplat-upload-page .container .bottom-info .info-wrap .right{width: 100%;}
+    .tplat-upload-page .container .bottom-info .sample-wrap {display: block;}
+
+    /*PL INNER*/
+    .tplat-pl-page .top-section .bottom-row .right {width: 100%; margin-bottom: 42px;}
+    /*.tplat-pl-page .top-section .bottom-row .right .filter-search,*/
+    /*.tplat-pl-page .top-section .bottom-row .right .filter-search input[type='text'] {width: 100%;}*/
+    /*.tplat-pl-page .top-section .bottom-row .right .right-pagination {width: 100%; margin-top: 10px;}*/
+
+    /*NROM BET LIST*/
+    /*.tplat-bet-list-page .content-info .league-table {margin: 0 auto; width: max-content;}*/
+    /*.tplat-bet-list-page .content-info .match-table {margin: 12px auto 0; width: max-content;}*/
+    .tplat-bet-list-page .content-info .match-table li p:last-child {min-width: 200px; max-width: 200px}
+
+    .tplat-bet-list-page:not(.posi-bet-list) .content-info {display: flex!important; justify-content: center;}
+    .tplat-bet-list-page:not(.posi-bet-list) .content-info .match-table,
+    .tplat-bet-list-page:not(.posi-bet-list) .content-info .league-table {margin-left: 0; width: 50%;}
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-summary ul li:first-child {width: 60.75%!important;}
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-summary ul li:nth-child(2) {width: 17%!important;}
+
+    /*POSI BET LIST*/
+    .other-pages.posi-bet-list .content-info {flex-wrap: wrap; padding: 16px 8px 24px;}
+    .tplat-bet-list-page.posi-bet-list .content-info .left .match-table,
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table {margin-left: 0 !important;}
+    .posi-bet-list .middle-wrap .filter-row .date-filter:nth-child(5) {margin-left: 0!important;}
+    .tplat-bet-list-page.posi-bet-list .content-info .left .league-table li p:first-child {min-width: 76px!important;}
+    .tplat-bet-list-page.posi-bet-list .content-info .left .league-table li p:last-child {min-width: 140px!important;}
+    .tplat-bet-list-page.posi-bet-list .content-info .left .match-table li p:first-child,
+    .tplat-bet-list-page.posi-bet-list .content-info .left .match-table li p:last-child {min-width: 160px!important;}
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table li p:first-child {min-width: 84px!important;}
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table li p:last-child {min-width: 80px!important;}
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-summary ul li p:first-child {min-height: 24px;}
+
+    /*UNSETTLED ORDERS*/
+     .tplat-uo-page .top-section .bottom-row .right{width: 100%!important;}
+    /*.tplat-uo-page .top-section .bottom-row .right .filter-search,
+    .tplat-uo-page .top-section .bottom-row .right .filter-search input[type='text'] {width: 100%!important;} */
+    .tplat-uo-page .top-section .bottom-row .right {margin-bottom: 32px;}
+
+    #trading-platform.dark .right-util-nav ul .mcount-ddown ul {bottom: -108px!important;}
+    
+}
+
+@media only screen and (max-width:861px) {
+    /*INNER CONTS FOR IPAD*/
+    .confirm-ticket .inner-cont {max-width: 600px!important;}
+
+    .gms-nav .games-titles .wrap li{font-size: 12px;}
+
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li, .table-games .container .tgames-row .stats .item-stats li, .gms-nav .games-titles .wrap li {
+        min-width: 42px;
+    }
+
+    .order-ticket .inner-cont.lg {min-width: 680px!important;}
+
+    header .container .right .right-util-nav ul.top-navs .country-ddown ul {bottom: -175px!important;}
+
+    .order-ticket .inner-cont .bottom-cont .inner div.stakenodd ul li {flex-wrap: nowrap!important;}
+
+    .tplat-bet-list-page.posi-bet-list .bet-summary ul li:first-child {width: 74%!important;}
+
+}
+
+/*FIX*/
+@media only screen and (max-width:818px) {
+    header .container .right .top-stats{width: auto!important;}
+}
+
+@media only screen and (max-width: 750px) {
+    .table-games#soccer-games .live-content .ord-ticket-click-wrapper li:first-child {min-width: 82px!important;}
+    .table-games#soccer-games .live-content .tgames-row .ord-ticket-click-wrapper li, .table-games#soccer-games .live-content .tgames-row .stats .item-stats li, .gms-nav .live-titles .soccer-titles .wrap li{min-width: 36px!important;}
+}
+
+@media only screen and (max-width:651px) {
+    header .container {padding-left: 5px!important; display: flex; align-items: center;}
+
+    .table-games .container .tgames-row li.btns-time .dtime {height:100%!important; display: flex; align-items: center;}
+    .order-ticket .inner-cont.lg {min-width: 600px!important;}
+
+     header .container,
+    .trad-plat-page .container,
+    .table-orders .order-table ul,
+    .gms-nav .games-titles,
+    .table-orders .order-table ul.col-name {padding-left: 0!important;}
+
+    .table-games .container .tgames-row.gms-items li:first-child,
+    .table-games .container .tgames-row .stats .item-stats li.btns-time,
+    .gms-nav .games-titles > li{width: 17.5%!important;}
+    .table-games .container .tgames-row .ord-ticket-click-wrapper,
+    .gms-nav .games-titles .wrap{width: 82.5%!important;}
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li:first-child,
+    .gms-nav .games-titles .wrap li:first-child,
+    .table-games .container .tgames-row .stats .item-stats .ord-ticket-click-wrapper li:first-child{min-width: 82px!important; max-width: 82px!important;}
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li, .table-games .container .tgames-row .stats .item-stats li, .gms-nav .games-titles .wrap li {min-width:37px!important;}
+    .table-games .container .tgames-row .ord-ticket-click-wrapper li, .gms-nav .games-titles .wrap li {padding: 5px 3px!important;}
+    .gms-nav .top .scrolling-text {width: 260px!important;}
+    .table-games .container .tgames-row li.btns-time .btns {min-width: 40px!important;}
+
+    .main-modal .inner-cont, .ann-modal .inner-cont, .addwlist-modal .inner-cont, .order-ticket .inner-cont, .confirm-ticket .inner-cont, .forecast-grid .inner-cont, .actualize-position .inner-cont, .close-positional .inner-cont,
+    .close-normal-order-ticket .inner-cont {transform: scale(0.8)!important; min-width: 700px;}
+    .main-modal .modal-cont .right-cont #unsetorders .cont .uo-inner .uo-filter-cont #view-uo-filter,
+    .main-modal .modal-cont .right-cont #transactions .cont .tr-inner .tr-filter-cont #view-tr-filter,
+    .main-modal .modal-cont .right-cont #plreport .cont .pl-inner .pl-filter-cont #view-pl-filter {width: 38px!important;}
+
+    .main-modal .modal-cont .right-cont #personaldetails .cont .pdet-inner .pdet-row .change-btns {right: 28px!important}
+    .main-modal .modal-cont .right-cont #personaldetails .cont .pdet-inner .pdet-row .change-btns ul li:first-child {max-width: initial!important;}
+    .main-modal .modal-cont .right-cont #personaldetails .cont .pdet-inner .pdet-row ul li {max-width: 35%!important}
+
+    .table-orders .top-bar ul.ordrs-tabs li {padding: 10px 10px 5px;}
+
+    /*OTHER PAGES*/
+    /*NORM BET LIST*/
+    .tplat-bet-list-page .middle-wrap .filter-row .company-filter {margin-bottom: 10px;}
+    .tplat-bet-list-page .middle-wrap .filter-row .filter,
+    .tplat-bet-list-page .middle-wrap .filter-row .filter-wrap {width: 100%!important;}
+    .tplat-bet-list-page .middle-wrap .filter-row .filter input,
+    .tplat-bet-list-page.posi-bet-list .filter .filter-wrap input[type='text']{width: 100%!important;}
+    .tplat-bet-list-page .content-info .league-table,
+    .tplat-bet-list-page .content-info .match-table,
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table {width: 100%!important;}
+    .tplat-bet-list-page .content-info .match-table li,
+    .tplat-bet-list-page .content-info .league-table li,
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table li {display: block;}
+    .tplat-bet-list-page .content-info .match-table li p,
+    .tplat-bet-list-page .content-info .league-table li p,
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table li p {min-width: initial!important; max-width: initial!important; width: 100%!important; text-align: left!important;}
+    /*POSI BET LIST*/
+    .tplat-bet-list-page.posi-bet-list .content-info .left .match-table,
+    .tplat-bet-list-page.posi-bet-list .content-info .left .sport-table {margin-left: 0!important;}
+    .posi-bet-list .middle-wrap .filter-row .status-filter {margin-top: 0!important;}
+    .posi-bet-list .middle-wrap .filter-row .filter {margin-bottom: 10px;}
+    /*ORDER LOG PAGE*/
+    .other-pages.dark.tplat-order-log-page .top-order-to-fixed .bottom {display: block;}
+    .tplat-order-log-page .container .top-order-to-fixed .bottom .start-date>p,
+    .tplat-order-log-page .container .top-order-to-fixed .bottom .end-date>p {width: 64px;}
+    .tplat-order-log-page .container .top-order-to-fixed .bottom .end-date {margin: 10px 0}
+    .tplat-order-log-page .container .top-order-to-fixed .bottom .end-date>p {padding-left: 0;}
+    .tplat-order-log-page .container .top-order-to-fixed .bottom .filter-btn {margin-left: 0!important;}
+    /*PAST ACTIVITIES*/
+    .tplat-pa-page .top-section .bottom-row .right {margin-bottom: 32px;}
+    /*TRANSACTION INNER*/
+    .tplat-tr-page .top-section .bottom-row .right {margin-bottom: 32px;}
+    /*TRANSACTION SETTLEMENT*/
+    .tplat-tr-page.tr-settlement .filter-row .filter .filter-wrap,
+    .tplat-tr-page.tr-settlement .filter-row .filter .filter-wrap input,
+    .tplat-tr-page.tr-settlement .filter-row .filter,
+    .tplat-tr-page.tr-settlement .filter-row .date-filter {width: 100%!important;}
+
+    .tplat-bet-list-page .bet-table .bet-table-wrap {overflow-x: auto!important;}
+}
+
+
+/*IE*/
+@supports (-ms-ime-align:auto) {
+    .table-games .container,
+    .table-orders .top-bar ul.col-name {padding-right: 16px;}
+}
+/*IOS*/
+@supports (-webkit-touch-callout: none) {
+    #all-orders .order-table-content, #normal-orders .order-table-content,
+    #positional-orders .order-table-content,
+    .table-orders .order-table ul.col-name,
+    .table-orders .order-table#positional-orders ul.col-name-positional {
+        min-width: 1280px!important;
+    }
+    
+    select {
+        border-radius: none!important;
+        appearance: none!important;
+        -webkit-appearance: none!important;
+        -moz-appearance: none!important;
+    }
+
+    input {
+        border-radius: 0;
+        appearance: none!important;
+        -webkit-appearance: none!important;
+        -moz-appearance: none!important;
+    }
+
+    /*@media only screen and (max-width: 1280px) {
+        ul.ord-items,
+        ul.col-name-positional,
+        .order-table ul.col-name {padding-right: 0!important;}
+    }*/
+
+
+    .standard-select .select-buttons {top: 2px!important; height: 23px}
+    .addwlist-modal .cont .filterbymarkets #mket-sel + .select-buttons, .addwlist-modal .cont .filterbymarkets #etype-sel + .select-buttons{height: 24px!important;}
+    .container {padding-left: 18px!important; padding-right: 18px!important}
+
+
+    /*IPAD FIXES
+    #trading-platform.dark .right-util-nav ul .mcount-ddown ul {bottom: -130px!important;}*/
+
+    .table-orders .order-table#positional-orders ul.col-name-positional {padding-right: 0!important;}
+    .table-orders .order-table ul.col-name {padding-right: 0!important;}
+
+    .gms-nav .games-titles {padding-right: 18px!important}
+
+    .table-games .container .tgames-row.gms-items.minfo-active .minfo-spacer {height: 84px!important}
+
+    .gms-nav .bot .right .mrkt-drop-cont h3:after {top: 12px!important}
+
+    .table-games .container.date-tabs {padding-bottom: 72px!important;}
+
+    .addwlist-modal .cont .filterbymarkets .filter-cont .clear-button {top: 2px!important; height: 25px;}
+
+    .order-ticket .inner-cont .bottom-cont .inner div.bottom-cont input[radio]{top: 8px!important;}
+
+
+    
+    .clear-field {top: 2px!important; height: 27px!important}
+    /*REMOVE PADDING*/
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-titles,
+    .main-modal .modal-cont .right-cont ul.top-title,
+    .tplat-bet-list-page .bet-table .bet-table-wrap .bet-summary {padding-right: 0!important}
+
+    .main-modal .modal-cont .right-cont  select {background: white!important; color: #333333!important}
+
+}
