@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vodds | Bet List</title>
+        <link rel="stylesheet" href="./styles/jquery-ui.min.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+    </head>
+    <body>
+        <header class="tplat-other-pages-header">
+            <div class="main-header">
+                <a href="https://blitzworx.com/vodds/trading-platform/" class="logo"><img src="./images/vodds-tplat-logo.png" alt=""></a>
+                <div class="right">
+                    <div class="country-ddown" title="Language">
+                        <div class="top">
+                            <img src="./images/country.png" alt="">
+                            <p>English</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="./images/country.png" alt="e"><p>English</p></a></li>
+                            <li><a href="#"><img src="./images/indo-flag.png" alt="e"><p>Indonesian</p></a></li>
+                            <li><a href="#"><img src="./images/china-flag.png" alt="e"><p>简体中文</p></a></li>
+                            <li><a href="#"><img src="./images/flag-fourth.png" alt="e"><p>ภาษา ไทย</p></a></li>
+                            <li><a href="#"><img src="./images/flag-last.png" alt="e"><p>русский язык</p></a></li>
+                        </ul>
+                    </div>
+                    <a href="https://blitzworx.com/vodds/faqs.html" class="help-link" target="_blank"><img src="./images/help-big.png" alt="question" title="Help"></a>
+                    <a href="#" title="Logout" class="logout-link"><img src="./images/logout-big.png" alt=""></a>
+                </div>
+            </div>
+            <span class="bottom-timezone">
+                <p id="curr-date"></p><p id="curr-time"></p><p id="time-zone"></p>  
+            </span>
+        </header>
+        <div class="tplat-bet-list-page posi-bet-list other-pages">
+            <div class="container">
+                <div class="top-ordernum">
+                    <h3>Bet List For Order: CN4160441</h3>
+                    <div class="right">
+                        <button class="refresh-btn">Refresh</button>
+                        <span class="number">0</span>
+                    </div>
+                </div>
+                <div class="content-info">
+                    <div class="left">
+                        <ul class="league-table">
+                            <li><p>League</p><p>Germany-bundesliga I</p></li>
+                            <li><p>Stake Open</p><p>35.00</p></li>
+                            <li><p>Odd Open</p><p>1.806</p></li>
+                            <li><p>Stake Close</p><p>0.00</p></li>
+                            <li><p>Odd Close</p><p>N.A</p></li>
+                            <li><p>Effective P&L</p><p>N.A</p></li>
+                        </ul>
+                        <ul class="match-table">
+                            <li><p>Match</p><p><span class="t1">Augsburg</span>  vs  <span class="t2">Vfl Wolfsburg</span></p></li>
+                            <li><p>Confirmed Stake Open</p><p>0.00</p></li>
+                            <li><p>Confirmed Odd Open</p><p>N.A</p></li>
+                            <li><p>Confirmed Stake Close</p><p>0.00</p></li>
+                            <li><p>Confirmed Odd Close</p><p>N.A</p></li>
+                        </ul>
+                        <ul class="sport-table">
+                            <li><p>Sport Type</p><p>SOCCER</p></li>
+                            <li><p>G. Stop</p><p>No</p></li>
+                            <li><p>Stop Loss</p><p>N.A</p></li>
+                            <li><p>Limit Win</p><p>N.A</p></li>
+                            <li><p>Odd format</p><p>EUR</p></li>
+                        </ul>
+                    </div>
+                    <div class="status">
+                        <p>UNFULFILLED</p>
+                    </div>
+                </div>
+                <div class="middle-wrap">
+                    <div class="filter-row">
+                        <div class="type-filter filter">
+                            <p>Type</p>
+                            <div class="filter-wrap">
+                                <span class="clear-field"></span>
+                                <input type="text">
+                                <ul class="result-dropdown">
+                                    <li><p>OPEN</p></li>
+                                    <li><p>CLOSE</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company-filter filter">
+                            <p>Company</p>
+                            <div class="filter-wrap">
+                                <span class="clear-field"></span>
+                                <input type="text">
+                                <ul class="result-dropdown">
+                                    <li><p>pin88</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="status-filter filter">
+                            <p>Status</p>
+                            <div class="filter-wrap">
+                                <span class="clear-field"></span>
+                                <input type="text">
+                                <ul class="result-dropdown">
+                                    <li><p>ACCEPTED</p></li>
+                                    <li><p>CANCELLED</p></li>
+                                    <li><p>DRAW</p></li>
+                                    <li><p>LOSS</p></li>
+                                    <li><p>PENDING</p></li>
+                                    <li><p>REJECTED</p></li>
+                                    <li><p>WIN</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="date-filter">
+                            <p>Start</p>
+                            <input type="text" id="bet-start-filter">
+                        </div>
+                        <div class="date-filter">
+                            <p>End</p>
+                            <input type="text" id="bet-end-filter">
+                        </div>
+                        <div class="filter-btns">
+                            <button class="filter-btn">Filter</button>
+                            <button class="reset-btn">Reset</button>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                    <div class="right-pagination">
+                        <span class="number">1</span>
+                        <div v-if="betbypages" class="by-pages" >
+                            <select name="pages" id="bet-pages">
+                                <option value="5">5</option>
+                                <option value="5">10</option>
+                                <option value="5">20</option>
+                                <option value="5">30</option>
+                                <option value="5">50</option>
+                            </select>
+                            <p>rows per page</p>
+                        </div>
+                        <button v-if="betbypages" @click="{betbypages = false}" class="view-all-in-one" >View all in one page</button>
+                        <button v-else class="view-by-pages" @click="{betbypages = true}">View by pages</button>
+                    </div>
+                </div>
+                <div class="bet-table">
+                    <div class="bet-table-wrap">
+                        <div class="bet-titles">
+                            <ul class="bet-table-titles">
+                                <li><p>ID</p></li>
+                                <li><p>Type</p></li>
+                                <li><p>Bet Time</p></li>
+                                <li><p>Bet Details</p></li>
+                                <li><p>Company</p></li>
+                                <li><p>Odd</p></li>
+                                <li><p>Stake</p></li>
+                                <li><p>P&L</p></li>
+                                <li><p>Status</p></li>
+                            </ul>
+                        </div>
+                        <div class="bet-items-wrap">
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li>	
+                                <li><p>ACCEPTED</p></li>	
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                            <ul class="bet-table-item">
+                                <li><p>14141414</p></li>
+                                <li><p>SOCCER</p></li>
+                                <li><p>2020-05-06 17:20:54</p></li>
+                                <li><p>No detail</p></li>
+                                <li><p>pin88</p></li>
+                                <li><p>4.090</p></li>
+                                <li><p>7.98</p></li>
+                                <li><p>N.A</p></li> 
+                                <li><p>ACCEPTED</p></li>    
+                            </ul>
+                        </div>
+                        <div class="bet-summary">
+                            <ul>
+                                <li><p>Total</p></li>
+                                <li>
+                                    <p>Total Bet Stake</p>
+                                    <p>7.98</p>
+                                </li>
+                                <li>
+                                    <p>Total P&L</p>
+                                    <p>N.A</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/vue.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/jquery-custom-resize.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+        //BET LIST PAGE
+        var betvue = new Vue({
+            el : ".tplat-bet-list-page",
+            data : {
+                betbypages : false
+            }
+        })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vodds | Trading Platform</title>
+        <link rel="stylesheet" href="./styles/jquery-ui.min.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+    </head>
+    <body>
+        <header class="tplat-other-pages-header">
+            <div class="main-header">
+                <a href="https://blitzworx.com/vodds/trading-platform/" class="logo"><img src="./images/vodds-tplat-logo.png" alt=""></a>
+                <div class="right">
+                    <div class="country-ddown" title="Language">
+                        <div class="top">
+                            <img src="./images/country.png" alt="">
+                            <p>English</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="./images/country.png" alt="e"><p>English</p></a></li>
+                            <li><a href="#"><img src="./images/indo-flag.png" alt="e"><p>Indonesian</p></a></li>
+                            <li><a href="#"><img src="./images/china-flag.png" alt="e"><p>简体中文</p></a></li>
+                            <li><a href="#"><img src="./images/flag-fourth.png" alt="e"><p>ภาษา ไทย</p></a></li>
+                            <li><a href="#"><img src="./images/flag-last.png" alt="e"><p>русский язык</p></a></li>
+                        </ul>
+                    </div>
+                    <a href="https://blitzworx.com/vodds/faqs.html" class="help-link" target="_blank"><img src="./images/help-big.png" alt="question" title="Help"></a>
+                    <a href="#" title="Logout" class="logout-link"><img src="./images/logout-big.png" alt=""></a>
+                </div>
+            </div>
+            <span class="bottom-timezone">
+                <p id="curr-date"></p><p id="curr-time"></p><p id="time-zone"></p>  
+            </span>
+        </header>
+
+        <div class="tplat-tr-page tr-settlement other-pages">
+            <div class="container">
+                <div class="top-section">
+                    <div class="top-row">
+                        <h3>Transactions</h3>
+                        <button class="download-btn">Download</button>
+                    </div><div class="filter-row">
+                        <div class="type-filter filter">
+                            <p>Type</p>
+                            <div class="filter-wrap">
+                                <span class="clear-field"></span>
+                                <input type="text">
+                                <ul class="result-dropdown">
+                                    <li><p>RESERVE</p></li>
+                                    <li><p>REFUND</p></li>
+                                    <li><p>RETURN</p></li>
+                                    <li><p>REVERTED</p></li>
+                                    <li><p>COMMISSION</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company-filter filter">
+                            <p>Order Id(s)</p>
+                            <div class="filter-wrap">
+                                <span class="clear-field"></span>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="date-filter">
+                            <p>Start</p>
+                            <input type="text" id="tr-start-filter">
+                        </div>
+                        <div class="date-filter">
+                            <p>End</p>
+                            <input type="text" id="tr-end-filter">
+                        </div>
+                        <div class="filter-btns">
+                            <button class="filter-btn">Filter</button>
+                            <button class="reset-btn">Reset</button>
+                        </div>
+                    </div>
+
+                    <div class="bottom-row">
+                        <ul class="order-tabs">
+                            <li class="active">Transactions</li>
+                        </ul>
+                        <div class="right">
+                            <div class="right-pagination">
+                                <span class="number">1</span>
+                                <div v-if="trbypages" class="by-pages" >
+                                    <select name="pages" id="pl-pages">
+                                        <option value="5">5</option>
+                                        <option value="5">10</option>
+                                        <option value="5">20</option>
+                                        <option value="5">30</option>
+                                        <option value="5">50</option>
+                                    </select>
+                                    <p>rows per page</p>
+                                </div>
+                                <button v-if="trbypages" @click="{trbypages = false}" class="view-all-in-one" >View all in one page</button>
+                                <button v-else class="view-by-pages" @click="{trbypages = true}">View by pages</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr-rep-content">
+                    <div class="tr-rep-table">
+                        <ul class="table-titles">
+                            <li><p>ID</p></li>
+                            <li><p>Type</p></li>
+                            <li><p>Time</p></li>
+                            <li><p>Amount</p></li>
+                            <li><p>Credit before</p></li>
+                            <li><p>Credit after</p></li>
+                            <li><p>Order id</p></li>
+                            <li><p>Remarks</p></li>
+                        </ul>
+                        <div class="table-item-wrap">
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>16845366</p></li>
+                                <li><p>REFUND</p></li>
+                                <li><p>2020-05-07 09:42:49</p></li>
+                                <li><p>0.00</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>19,992.59</p></li>
+                                <li><p>CP37787</p></li>
+                                <li><p>Close order is void with margin (0) and max potential loss (0), refund (0)</p></li>
+                            </ul>
+                            <!--NO DATA ROW-->
+                            <ul class="no-data">
+                                <li><p>No data available</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/vue.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/jquery-custom-resize.js"></script>
+        <script src="./js/main.js"></script>
+
+        <script>
+            var plvue = new Vue({
+                el : ".tplat-tr-page",
+                data : {
+                    trbypages : false
+                }
+            });
+
+            $("#tr-start-filter").datepicker();
+            $("#tr-end-filter").datepicker();
+        </script>
+    </body>
+</html>

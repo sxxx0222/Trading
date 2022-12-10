@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vodds | Trading Platform</title>
+        <link rel="stylesheet" href="./styles/jquery-ui.min.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+    </head>
+    <body>
+        <header class="tplat-other-pages-header">
+            <div class="main-header">
+                <a href="https://blitzworx.com/vodds/trading-platform/" class="logo"><img src="./images/vodds-tplat-logo.png" alt=""></a>
+                <div class="right">
+                    <div class="country-ddown" title="Language">
+                        <div class="top">
+                            <img src="./images/country.png" alt="">
+                            <p>English</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="./images/country.png" alt="e"><p>English</p></a></li>
+                            <li><a href="#"><img src="./images/indo-flag.png" alt="e"><p>Indonesian</p></a></li>
+                            <li><a href="#"><img src="./images/china-flag.png" alt="e"><p>简体中文</p></a></li>
+                            <li><a href="#"><img src="./images/flag-fourth.png" alt="e"><p>ภาษา ไทย</p></a></li>
+                            <li><a href="#"><img src="./images/flag-last.png" alt="e"><p>русский язык</p></a></li>
+                        </ul>
+                    </div>
+                    <a href="https://blitzworx.com/vodds/faqs.html" class="help-link" target="_blank"><img src="./images/help-big.png" alt="question" title="Help"></a>
+                    <a href="#" title="Logout" class="logout-link"><img src="./images/logout-big.png" alt=""></a>
+                </div>
+            </div>
+            <span class="bottom-timezone">
+                <p id="curr-date"></p><p id="curr-time"></p><p id="time-zone"></p>  
+            </span>
+        </header>
+
+        <div class="tplat-pa-page other-pages">
+            <div class="container">
+                <div class="top-section">
+                    <div class="top-row">
+                        <div class="left">
+                            <h3>Past Activities</h3>
+                            <p><b>from</b> 2020-04-06 <b>to</b> 2020-05-11</p>
+                        </div>
+                        <button class="download-btn">Download</button>
+                    </div>
+                    <div class="bottom-row">
+                        <ul class="order-tabs">
+                            <li class="active">Past Activities</li>
+                        </ul>
+                        <div class="right">
+                            <div class="right-pagination">
+                                <span class="number">1</span>
+                                <div v-if="pabypages" class="by-pages" >
+                                    <select name="pages" id="pl-pages">
+                                        <option value="5">5</option>
+                                        <option value="5">10</option>
+                                        <option value="5">20</option>
+                                        <option value="5">30</option>
+                                        <option value="5">50</option>
+                                    </select>
+                                    <p>rows per page</p>
+                                </div>
+                                <button v-if="pabypages" @click="{pabypages = false}" class="view-all-in-one" >View all in one page</button>
+                                <button v-else class="view-by-pages" @click="{pabypages = true}">View by pages</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pa-rep-content">
+                    <div class="pa-rep-table">
+                        <ul class="table-titles">
+                            <li><p>Time</p></li>
+                            <li><p>Type</p></li>
+                            <li><p>IP</p></li>
+                            <li><p>Description</p></li>
+                        </ul>
+                        <div class="table-item-wrap">
+                            <ul class="table-item">
+                                <li><p>2020-05-11 14:05:55</p></li>
+                                <li><p>Log in</p></li>
+                                <li><p>152.32.106.71</p></li>
+                                <li><p>Log in</p></li>
+                            </ul>
+                            <ul class="table-item">
+                                <li><p>2020-05-11 14:05:55</p></li>
+                                <li><p>Create Order</p></li>
+                                <li><p>152.32.106.71</p></li>
+                                <li><p>Place order FN4160055</p></li>
+                            </ul>
+                            <!--NO DATA ROW-->
+                            <ul class="no-data">
+                                <li><p>No data available</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/vue.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/jquery-custom-resize.js"></script>
+        <script src="./js/main.js"></script>
+
+        <script>
+            var plvue = new Vue({
+                el : ".tplat-pa-page",
+                data : {
+                    pabypages : false
+                }
+            });
+        </script>
+    </body>
+</html>

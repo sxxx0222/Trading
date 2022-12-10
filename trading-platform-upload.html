@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vodds | Trading Platform</title>
+        <link rel="stylesheet" href="./styles/jquery-ui.min.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+    </head>
+    <body>
+        <header class="tplat-other-pages-header">
+            <div class="main-header">
+                <a href="https://blitzworx.com/vodds/trading-platform/" class="logo"><img src="./images/vodds-tplat-logo.png" alt=""></a>
+                <div class="right">
+                    <div class="country-ddown" title="Language">
+                        <div class="top">
+                            <img src="./images/country.png" alt="">
+                            <p>English</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="./images/country.png" alt="e"><p>English</p></a></li>
+                            <li><a href="#"><img src="./images/indo-flag.png" alt="e"><p>Indonesian</p></a></li>
+                            <li><a href="#"><img src="./images/china-flag.png" alt="e"><p>简体中文</p></a></li>
+                            <li><a href="#"><img src="./images/flag-fourth.png" alt="e"><p>ภาษา ไทย</p></a></li>
+                            <li><a href="#"><img src="./images/flag-last.png" alt="e"><p>русский язык</p></a></li>
+                        </ul>
+                    </div>
+                    <a href="https://blitzworx.com/vodds/faqs.html" class="help-link" target="_blank"><img src="./images/help-big.png" alt="question" title="Help"></a>
+                    <a href="#" title="Logout" class="logout-link"><img src="./images/logout-big.png" alt=""></a>
+                </div>
+            </div>
+            <span class="bottom-timezone">
+                <p id="curr-date"></p><p id="curr-time"></p><p id="time-zone"></p>  
+            </span>
+        </header>
+        <div class="tplat-upload-page other-pages">
+            <div class="container">
+                <h1>Upload File</h1>
+                <h3>SUPPLEMENTARY DOCUMENTS</h3>
+                <form action="POST">
+                    <ul class="file-inputs">
+                        <li>
+                            <p>Copy of one(1) valid goverment issued ID*</p>
+                            <div class="input-wrap">
+                                <input type="file" id="goverment-id-file">
+                                <label for="goverment-id-file"><span class="file-icon"></span><p>Choose file...</p></label>
+                                <p class="gid-fail-upload">Please choose file</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Proof of Address Document*</p>
+                            <div class="input-wrap">
+                                <input type="file" id="proof-add-file">
+                                <label for="proof-add-file"><span class="file-icon"></span><p>Choose file...</p></label>
+                                <p class="pad-fail-upload">Please choose file</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Submit" id="submit-files">
+                </form>
+                <div class="bottom-info">
+                    <div class="info-wrap">
+                        <div class="left">
+                            <h6>Government Issued ID:</h6>
+                            <ul>
+                                <li><p>International Passport, or</p></li>
+                                <li><p>Front and Backside of ID Card, or</p></li>
+                                <li><p>Front and Backside of Driver's License, 
+                                    (if expiry date of the documents is not stated, 
+                                    please provide us with an international passport)</p></li>
+                            </ul>
+                            <p>Please note that any document sent must have all edges clearly visible.</p>
+                        </div>
+                        <div class="right">
+                            <div class="sample-wrap">
+                                <p>Sample of Goverment Issued ID:</p>
+                                <a href="./images/passport-sample.jpg" target="_blank">
+                                    <img src="./images/passport-sample.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-wrap">
+                        <div class="left">
+                            <h6>Proof of Address:</h6>
+                            <ul>
+                                <li><p>A clear picture or a PDF file attachment of the most recent, 
+                                    full size proof of residence document for the period of last three months,
+                                     showing your full name and the residential address stated during the registration of the account.</p></li>
+                                <li><p>Acceptable documentation: Bank or Credit card statement 
+                                    (transactions and other sensitive details may be covered), 
+                                    utility bills such as electricity/gas/water/ TV/Internet bills, 
+                                    official government taxes or proof of residence from local municipality or 
+                                    the Police.</p></li>
+                            </ul>
+                            <p>Kindly note that we do not accept mobile phone bills as a proof of residency 
+                                nor screenshots or images printed directly from webpage. Please not
+                        </div>
+                        <div class="right">
+                            <div class="sample-wrap">
+                                <p>Sample document with Proof of Address:</p>
+                                <a href="./images/poa-sample.jpg" target="_blank">
+                                    <img src="./images/poa-sample.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/vue.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/jquery-custom-resize.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
